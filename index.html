@@ -70,6 +70,7 @@
                 <input
                   id="email"
                   type="email"
+                  class="email"
                   placeholder="johndoe@example.com"
                 />
               </div>
@@ -85,9 +86,18 @@
               <p><span>2</span> Your Payment Information</p>
             </div>
             <form action="">
-              <div class="input-box">
+              <div class="input-box creditCard">
                 <label for="creditCard">Credit Card</label>
-                <input id="creditCard" type="text" placeholder="Card Number" />
+                <input id="creditCard" type="text" />
+                <div class="placeholder">
+                  <div class="cardNum">
+                    <input type="text" placeholder="Card Number" />
+                  </div>
+                  <div class="ccv-wrap">
+                    <input type="text" placeholder="MM / YY" />
+                    <input type="text" placeholder="CVC" />
+                  </div>
+                </div>
               </div>
 
               <div class="btn-box">
@@ -139,10 +149,10 @@
 
           <div class="feedback">
             <div class="feedback-text">
-              <p>
+              <blockquote>
                 FTP is horrible to deal with. WP Pusher solves that issue, and
                 the customer support is awesome!
-              </p>
+              </blockquote>
             </div>
             <div class="feedback-profile">
               <div class="profile-img">
@@ -154,6 +164,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="footer main">
+        <p>© 2018 WP Pusher IVS · <a href="#"> Terms of Service</a></p>
       </div>
     </div>
   </body>
